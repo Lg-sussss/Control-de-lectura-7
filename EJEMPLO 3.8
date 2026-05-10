@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ClaseMath {
+
+    public static void main(String[] args) {
+
+        // se crea el objeto leer
+        Scanner leer = new Scanner(System.in);
+
+        double primero, segundo; // se declaran dos variables double
+
+        System.out.println("\tPrograma que utiliza la clase Math");
+
+        System.out.print("Dame el primer número: ");
+        // se lee un double y se guarda en primero
+        primero = leer.nextDouble();
+
+        System.out.print("Dame el segundo número: ");
+        // lee otro double y se guarda en segundo
+        segundo = leer.nextDouble();
+
+        System.out.println("Máximo = " + Math.max(primero, segundo));
+        System.out.println("Mínimo = " + Math.min(primero, segundo));
+        System.out.println("Potencia = " + Math.pow(primero, segundo));
+        System.out.println("Raíz cuadrada = " + Math.sqrt(primero));
+        System.out.println("Raíz cúbica = " + Math.pow(primero, 1 / 3.0));
+        System.out.println("Número Aleatorio = " + Math.random());
+        System.out.println("PI = " + Math.PI);
+        System.out.println("E = " + Math.E);
+
+        leer.close();
+    }
+}
